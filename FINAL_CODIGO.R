@@ -121,36 +121,25 @@ library(kernlab)
 
 set.seed(12345)
 options(stringsAsFactors = FALSE)
-
 # ============================================================
 # 3. RUTAS DE ARCHIVOS
 # ============================================================
 
-setwd(
-  "C:/Users/Usuario/OneDrive/Escritorio/master bioinformatica/Informacion TFM/datos R/pruebafinal"
-)
+counts_file <- file.path("datos", "RNAseq-rawcounts.tsv.gz")
 
-counts_file <- "RNAseq-rawcounts.tsv.gz"
-
-clinical_file <- "Supplementary Tables 1-6.xlsx"
+clinical_file <- file.path("datos", "Supplementary Tables 1-6.xlsx")
 
 outdir <- "resultados_TFM"
 
 if (!dir.exists(outdir)) {
-  dir.create(outdir)
+  dir.create(outdir, recursive = TRUE)
 }
 
 figdir <- file.path(outdir, "figuras")
-
-if (!dir.exists(figdir)) {
-  dir.create(figdir)
-}
+dir.create(figdir, showWarnings = FALSE, recursive = TRUE)
 
 tabdir <- file.path(outdir, "tablas")
-
-if (!dir.exists(tabdir)) {
-  dir.create(tabdir)
-}
+dir.create(tabdir, showWarnings = FALSE, recursive = TRUE)
 
 # ============================================================
 # 4. PARÁMETROS PRINCIPALES DEL ANÁLISIS
