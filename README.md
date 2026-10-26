@@ -106,4 +106,7 @@ Any candidate biomarkers identified in this study require further validation in 
 
 ## Author
 
-Master's Thesis in Bioinformatics.
+**Andrea Manzaneque Pérez**  
+Master's Degree in Bioinformatics
+
+This repository contains the code and selected results from my Master's thesis, focused on transcriptomic analysis of RNA-seq data to investigate molecular signatures associated with response to neoadjuvant treatment in breast cancer.
