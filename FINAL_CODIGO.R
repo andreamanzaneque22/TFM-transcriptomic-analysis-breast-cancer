@@ -4790,8 +4790,7 @@ gtf_url <- paste0(
 )
 
 gtf_file <- file.path(
-  getwd(),
-  "resultados_TFM",
+  outdir,
   "Homo_sapiens.GRCh38.116.gtf.gz"
 )
 
