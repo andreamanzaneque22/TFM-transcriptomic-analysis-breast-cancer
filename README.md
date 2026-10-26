@@ -19,20 +19,30 @@ The main objective is to characterize transcriptomic patterns associated with tr
 
 ```text
 TFM-transcriptomic-analysis-breast-cancer/
+│
 ├── datos/
 │   ├── RNAseq-rawcounts.tsv.gz
 │   └── Supplementary Tables 1-6.xlsx
+│
 ├── resultados_TFM/
+│   ├── figuras/
+│   └── tablas/
+│
 ├── resultados_principales/
+│   ├── figuras/
+│   └── tablas/
+│
 ├── FINAL_CODIGO.R
 ├── README.md
 └── .gitignore
 ```
 
-- `datos/`: Input RNA-seq counts and supplementary clinical information.
-- `FINAL_CODIGO.R`: Main R script containing the analysis pipeline.
-- `resultados_TFM/`: Directory for intermediate and generated analysis outputs.
-- `resultados_principales/`: Selected figures and tables intended to summarize the main findings.
+- **`datos/`**: Contains the RNA-seq raw count matrix and supplementary clinical information used in the analysis.
+- **`resultados_TFM/`**: Directory for intermediate and generated analysis outputs. These files are generated when the analysis is executed and are not necessarily included in the repository.
+- **`resultados_principales/`**: Contains selected figures and tables highlighting the main findings of the analysis.
+- **`FINAL_CODIGO.R`**: Main R script containing the analysis pipeline.
+- **`README.md`**: Project overview, methodology, software requirements and instructions for reproducing the analysis.
+- **`.gitignore`**: Specifies files and directories excluded from version control.
 
 ## Data
 
